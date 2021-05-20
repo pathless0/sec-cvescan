@@ -79,4 +79,4 @@ class CVEScanner:
     def _installed_pkg_is_patched(self, installed_version, patched_version):
         version_compare = apt_pkg.version_compare(installed_version, patched_version)
 
-        return version_compare >= 0
+        return version_compare >= 0 
